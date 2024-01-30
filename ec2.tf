@@ -1,3 +1,6 @@
+module "ec2-instance" {
+  source = "./nst"
+}
 terraform {
   required_providers {
     aws = {
@@ -22,3 +25,4 @@ resource "aws_instance" "app_server" {
     Name = "ExampleAppServerInstance"
   }
 }
+
